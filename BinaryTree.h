@@ -27,13 +27,14 @@ public:
     void print_postorder();
 
 };
-//////////////////////////////////////////////////////////////////////////////////////////
+
 
 template <class T>
 void tree<T>::print_postorder() {
-    std::cout << "inorder: " << '\n';
+    std::cout << "postorder: " << '\n';
     if(root)
         print_postorder_helper(root);
+    std::cout << '\n';
 }
 
 template <class T>
@@ -51,6 +52,7 @@ void tree<T>::print_inorder() {
     std::cout << "inorder: " << '\n';
     if(root)
         print_inorder_helper(root);
+    std::cout << '\n';
 }
 
 template <class T>
